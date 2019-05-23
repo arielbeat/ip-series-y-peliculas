@@ -35,6 +35,15 @@ const routes: Routes = [
         ]
       },
       {
+        path: 'acerca-de',
+        children: [
+          {
+            path: '',
+            loadChildren: '../acerca-de/acerca-de.module#AcercaDePageModule'
+          }
+        ]
+      },
+      {
         path: '',
         redirectTo: '/tabs/tab1',
         pathMatch: 'full'
