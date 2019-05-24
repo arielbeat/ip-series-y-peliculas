@@ -1,0 +1,70 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-buttons slot="start">
+      <ion-button (click)="volver()">
+        <ion-icon name="arrow-back" size="small"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Películas: Acción</ion-title>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon name="flame" size="small"></ion-icon>  
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-img src="../../assets/Dragon-Ball-Super-Broly-2.jpg"></ion-img>
+      </ion-col>
+      <ion-col>
+        <h4>Dragon Ball Super: Broly</h4>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-item>
+          <ion-label>Ver más detalles</ion-label>
+          <ion-toggle color="success" [(ngModel)]="dragon" (click)="verDragon()"></ion-toggle>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row *ngIf="mostrarDragon">
+      <ion-col>
+        <ion-item>
+          <ion-icon name="people" slot="start"></ion-icon>
+          <p>País: Japón</p>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="contact" slot="start"></ion-icon>
+          <p>Productora: Toei / Shueisha / Toei Animation / Bandai Co., Ltd.</p>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="film" slot="start"></ion-icon>
+          <p>Género: Animación. Ciencia ficción. Acción | Dragon Ball. Manga. Secuela</p>
+        </ion-item>
+      </ion-col>
+      <ion-col size="12" class="ion-padding-horizontal">
+        <h3 class="ion-text-center">Sinopsis</h3>
+        <p>La Tierra disfruta en paz la celebración de el Torneo del Poder. Sin embargo, Goku es consciente de que existen enemigos aún por descubrir en el Universo, por lo que sigue entrenando sin descanso para alcanzar cotas de poder nunca antes conocidas en un superguerrero. Confirmando sus peores temores, un día aparece un supersayano que responde al nombre de «Broly», un poderoso guerrero que debería de haber sido eliminado junto con el planeta Vegeta cuando éste fue destruído hace ya algunas décadas. ¿Cómo ha podido sobrevivir un guerrero de tal poder? La situación no deja de empeorar cuando el mismísimo Frieza vuelve desde el Infierno para verse envuelto en un terrible mix que llevará a los héroes a luchar por salvar el planeta Tierra una vez más.</p>
+      </ion-col>
+      <ion-col>
+        <ion-button color="danger" expand="block">
+          <ion-icon name="logo-youtube" slot="start"></ion-icon>
+          Ver trailer
+        </ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-button color="secondary" expand="block" (click)="compartir()">
+          <ion-icon name="share" slot="start"></ion-icon>
+          Compartir
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

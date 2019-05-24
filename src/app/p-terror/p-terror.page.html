@@ -1,0 +1,70 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-buttons slot="start">
+      <ion-button (click)="volver()">
+        <ion-icon name="arrow-back" size="small"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Películas: Terror</ion-title>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon name="flame" size="small"></ion-icon>  
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-img src="../../assets/it.jpg"></ion-img>
+      </ion-col>
+      <ion-col>
+        <h4>IT (COSA)</h4>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-item>
+          <ion-label>Ver más detalles</ion-label>
+          <ion-toggle color="success" [(ngModel)]="dragon" (click)="verDragon()"></ion-toggle>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row *ngIf="mostrarDragon">
+      <ion-col>
+        <ion-item>
+          <ion-icon name="people" slot="start"></ion-icon>
+          <p>País: Estados Unidos</p>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="contact" slot="start"></ion-icon>
+          <p>Productora: New Line Cinema , RatPac-Dune Entertainment , KatzSmith Productions, Lin Pictures , Vertigo Entertainment ,y distribuido por Warner Bros.</p>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="film" slot="start"></ion-icon>
+          <p>Género: Película de terror sobre natural.</p>
+        </ion-item>
+      </ion-col>
+      <ion-col size="12" class="ion-padding-horizontal">
+        <h3 class="ion-text-center">Sinopsis</h3>
+        <p>La película cuenta la historia de siete niños en Derry, Maine , que están aterrorizados por el ser del mismo nombre , solo para enfrentar a sus propios demonios personales en el proceso.</p>
+      </ion-col>
+      <ion-col>
+        <ion-button color="danger" expand="block">
+          <ion-icon name="logo-youtube" slot="start"></ion-icon>
+          Ver trailer
+        </ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-button color="secondary" expand="block" (click)="compartir()">
+          <ion-icon name="share" slot="start"></ion-icon>
+          Compartir
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
