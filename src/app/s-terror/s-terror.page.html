@@ -1,5 +1,9 @@
 <ion-header>
+<<<<<<< HEAD
   <ion-toolbar color="success">
+=======
+  <ion-toolbar color="tertiary">
+>>>>>>> d25678ec6499ce48a5902ca299af2f2067a942fe
     <ion-buttons slot="start">
       <ion-button (click)="volver()">
         <ion-icon name="arrow-back" size="small"></ion-icon>
@@ -8,7 +12,11 @@
     <ion-title>Series: Terror</ion-title>
     <ion-buttons slot="end">
       <ion-button>
+<<<<<<< HEAD
         <ion-icon name="flame" size="small"></ion-icon>  
+=======
+        <ion-icon name="play" size="small"></ion-icon>  
+>>>>>>> d25678ec6499ce48a5902ca299af2f2067a942fe
       </ion-button>
     </ion-buttons>
   </ion-toolbar>
@@ -28,6 +36,7 @@
       <ion-col>
         <ion-item>
           <ion-label>Ver más detalles</ion-label>
+<<<<<<< HEAD
           <ion-toggle color="success" [(ngModel)]="ngMTipo" (click)="verTg()"></ion-toggle>
         </ion-item>
       </ion-col>
@@ -37,6 +46,17 @@
         <ion-item>
           <ion-icon name="people" slot="start"></ion-icon>
           <p>País: Estados Unidos</p>
+=======
+          <ion-toggle color="tertiary" [(ngModel)]="dragon" (click)="verDragon()"></ion-toggle>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row *ngIf="mostrarDragon">
+      <ion-col>
+        <ion-item>
+          <ion-icon name="people" slot="start"></ion-icon>
+          <p>País: Japón</p>
+>>>>>>> d25678ec6499ce48a5902ca299af2f2067a942fe
         </ion-item>
         <ion-item>
           <ion-icon name="contact" slot="start"></ion-icon>
@@ -51,7 +71,11 @@
         <h3 class="ion-text-center">Sinopsis</h3>
         <p>Es una historia de horror sobrenatural que presenta a personas involucradas en posesiones demoníacas y gira en torno a la vida de Kyle Barnes, quien es rechazado por la gente de Roma. West Virginia , por supuestamente lastimar a su esposa e hija.</p>
       </ion-col>
+<<<<<<< HEAD
       <ion-col>
+=======
+      <ion-col size="10" offset="1">
+>>>>>>> d25678ec6499ce48a5902ca299af2f2067a942fe
         <ion-button color="danger" expand="block">
           <ion-icon name="logo-youtube" slot="start"></ion-icon>
           Ver trailer
@@ -59,12 +83,57 @@
       </ion-col>
     </ion-row>
     <ion-row>
+<<<<<<< HEAD
       <ion-col>
         <ion-button color="secondary" expand="block" (click)="compartir()">
+=======
+      <ion-col size="10" offset="1">
+        <ion-button color="tertiary" expand="block" (click)="compartir()">
+>>>>>>> d25678ec6499ce48a5902ca299af2f2067a942fe
           <ion-icon name="share" slot="start"></ion-icon>
           Compartir
         </ion-button>
       </ion-col>
     </ion-row>
+<<<<<<< HEAD
+=======
+    <ion-row class="ion-margin">
+      <ion-col class="ion-text-center">Clasificación:</ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="2" offset="1">
+        <ion-icon name="star" color="warning"></ion-icon>
+      </ion-col>
+      <ion-col size="2">
+        <ion-icon name="star" color="warning"></ion-icon>
+      </ion-col>
+      <ion-col size="2">
+        <ion-icon name="star" color="warning"></ion-icon>
+      </ion-col>
+      <ion-col size="2">
+        <ion-icon name="star" color="warning"></ion-icon>
+      </ion-col>
+      <ion-col size="2">
+        <ion-icon name="star" color="warning"></ion-icon>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="2" offset="1">
+        <ion-checkbox color="light" [(ngModel)]="uno" (ionChange)="verEstrellas1()"></ion-checkbox>
+      </ion-col>
+      <ion-col size="2">
+        <ion-checkbox color="medium" [(ngModel)]="dos" (ionChange)="verEstrellas2()"></ion-checkbox>
+      </ion-col>
+      <ion-col size="2">
+        <ion-checkbox color="secondary" [(ngModel)]="tres" (ionChange)="verEstrellas3()"></ion-checkbox>
+      </ion-col>
+      <ion-col size="2">
+        <ion-checkbox color="primary" [(ngModel)]="cuatro" (ionChange)="verEstrellas4()"></ion-checkbox>
+      </ion-col>
+      <ion-col size="2">
+        <ion-checkbox color="success" [(ngModel)]="cinco" (ionChange)="verEstrellas5()"></ion-checkbox>
+      </ion-col>
+    </ion-row>
+>>>>>>> d25678ec6499ce48a5902ca299af2f2067a942fe
   </ion-grid>
 </ion-content>
