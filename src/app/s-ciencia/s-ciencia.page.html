@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-toolbar color="success">
+  <ion-toolbar color="tertiary">
     <ion-buttons slot="start">
       <ion-button (click)="volver()">
         <ion-icon name="arrow-back" size="small"></ion-icon>
@@ -8,7 +8,7 @@
     <ion-title>Series: Ciencia Ficción</ion-title>
     <ion-buttons slot="end">
       <ion-button>
-        <ion-icon name="flame" size="small"></ion-icon>  
+        <ion-icon name="play" size="small"></ion-icon>  
       </ion-button>
     </ion-buttons>
   </ion-toolbar>
@@ -28,7 +28,7 @@
       <ion-col>
         <ion-item>
           <ion-label>Ver más detalles</ion-label>
-          <ion-toggle color="success" [(ngModel)]="dragon" (click)="verDragon()"></ion-toggle>
+          <ion-toggle color="tertiary" [(ngModel)]="dragon" (click)="verDragon()"></ion-toggle>
         </ion-item>
       </ion-col>
     </ion-row>
@@ -51,7 +51,7 @@
         <h3 class="ion-text-center">Sinopsis</h3>
         <p>Al investigar un satélite dañado cerca de un sistema estelar binario en el borde del espacio de la Federación , los miembros de la tripulación del USS Shenzhou descubren un objeto oculto de sus sensores. Después de que el primer oficial Michael Burnham se ofrece como voluntario para investigar el objeto, encuentra un antiguo y tallado barco. Ella es atacada por un Klingon , y cuando intenta escapar, lo mata accidentalmente. Un grupo de klingons lamenta la muerte de su soldado, apodado el "Portador de la antorcha", antes de que los voluntarios de Voq se retiren para ocupar su lugar. Los Klingon, liderados por T'Kuvma, se revelan en un vestuario.enviar. T'Kuvma predica a sus seguidores de los intentos de la Federación de usurpar la individualidad de los klingon y su cultura, y planea cumplir una antigua profecía uniendo las 24 grandes casas de Klingon, como lo hizo una vez Kahless . Voq activa una baliza que convoca a los líderes klingon. Burnham, desesperado por evitar una guerra, intenta disparar primero contra los klingon, contra los deseos del capitán Philippa Georgiou. Burnham es arrestado por un motín.</p>
       </ion-col>
-      <ion-col>
+      <ion-col size="10" offset="1">
         <ion-button color="danger" expand="block">
           <ion-icon name="logo-youtube" slot="start"></ion-icon>
           Ver trailer
@@ -59,8 +59,8 @@
       </ion-col>
     </ion-row>
     <ion-row>
-      <ion-col>
-        <ion-button color="secondary" expand="block" (click)="compartir()">
+      <ion-col size="10" offset="1">
+        <ion-button color="tertiary" expand="block" (click)="compartir()">
           <ion-icon name="share" slot="start"></ion-icon>
           Compartir
         </ion-button>

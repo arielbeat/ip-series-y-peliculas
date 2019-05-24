@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-toolbar color="success">
+  <ion-toolbar color="tertiary">
     <ion-buttons slot="start">
       <ion-button (click)="volver()">
         <ion-icon name="arrow-back" size="small"></ion-icon>
@@ -8,7 +8,7 @@
     <ion-title>Series: Terror</ion-title>
     <ion-buttons slot="end">
       <ion-button>
-        <ion-icon name="flame" size="small"></ion-icon>  
+        <ion-icon name="play" size="small"></ion-icon>  
       </ion-button>
     </ion-buttons>
   </ion-toolbar>
@@ -28,7 +28,7 @@
       <ion-col>
         <ion-item>
           <ion-label>Ver más detalles</ion-label>
-          <ion-toggle color="success" [(ngModel)]="dragon" (click)="verDragon()"></ion-toggle>
+          <ion-toggle color="tertiary" [(ngModel)]="dragon" (click)="verDragon()"></ion-toggle>
         </ion-item>
       </ion-col>
     </ion-row>
@@ -51,7 +51,7 @@
         <h3 class="ion-text-center">Sinopsis</h3>
         <p>Es una historia de horror sobrenatural que presenta a personas involucradas en posesiones demoníacas y gira en torno a la vida de Kyle Barnes, quien es rechazado por la gente de Roma. West Virginia , por supuestamente lastimar a su esposa e hija.</p>
       </ion-col>
-      <ion-col>
+      <ion-col size="10" offset="1">
         <ion-button color="danger" expand="block">
           <ion-icon name="logo-youtube" slot="start"></ion-icon>
           Ver trailer
@@ -59,8 +59,8 @@
       </ion-col>
     </ion-row>
     <ion-row>
-      <ion-col>
-        <ion-button color="secondary" expand="block" (click)="compartir()">
+      <ion-col size="10" offset="1">
+        <ion-button color="tertiary" expand="block" (click)="compartir()">
           <ion-icon name="share" slot="start"></ion-icon>
           Compartir
         </ion-button>
