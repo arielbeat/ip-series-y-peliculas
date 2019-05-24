@@ -1,9 +1,53 @@
 <ion-header>
+<<<<<<< HEAD
   <ion-toolbar color="warning">
     <ion-title>
       Series
     </ion-title>
+=======
+  <ion-toolbar color="success">
+    <ion-buttons slot="start">
+      <ion-button>
+        <ion-icon name="videocam"></ion-icon>  
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Series</ion-title>
+>>>>>>> Se agregan paginas
   </ion-toolbar>
 </ion-header>
 
-<ion-content></ion-content>
+<ion-content>
+  <ion-radio-group [(ngModel)]="categoria">
+    <ion-list-header>
+      Seleccione una categoría:
+    </ion-list-header>
+    <ion-list>
+      <ion-item>
+        <ion-label>Accion</ion-label>
+        <ion-radio color="primary" name="categoria" value="accion"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>Ciencia Ficción</ion-label>
+        <ion-radio color="secondary" name="categoria" value="ciencia"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>Comedia</ion-label>
+        <ion-radio color="tertiary" name="categoria" value="comedia"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>Terror</ion-label>
+        <ion-radio color="danger" name="categoria" value="terror"></ion-radio>
+      </ion-item>
+    </ion-list>
+  </ion-radio-group>
+  <ion-grid class="ion-padding">
+    <ion-row>
+      <ion-col size="10" offset="1">
+        <ion-button color="success" expand="block" (click)="verCategoria()">
+          <ion-icon name="videocam" slot="start"></ion-icon>
+          Ver categoría
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
