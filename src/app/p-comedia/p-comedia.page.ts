@@ -9,8 +9,8 @@ import { NavController, ActionSheetController } from '@ionic/angular';
 //PComediaPage
 export class PComediaPage implements OnInit {
 
-  dragon: boolean;
-  mostrarDragon: boolean;
+  ngMTipo: boolean;
+  mostrarTg: boolean;
 
   constructor(
     public navController: NavController,
@@ -24,11 +24,11 @@ export class PComediaPage implements OnInit {
     this.navController.back();
   }
 
-  verDragon() {
-    if(!this.dragon) {
-      this.mostrarDragon = true;
+  verTg() {
+    if(!this.ngMTipo) {
+      this.mostrarTg = true;
     } else {
-      this.mostrarDragon = false;
+      this.mostrarTg = false;
     }
   }
 
