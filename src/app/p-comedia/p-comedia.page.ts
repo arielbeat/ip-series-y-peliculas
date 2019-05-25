@@ -9,6 +9,10 @@ import { NavController, ActionSheetController } from '@ionic/angular';
 //PComediaPage
 export class PComediaPage implements OnInit {
 
+<<<<<<< HEAD
+  ngMTipo: boolean;
+  mostrarTg: boolean;
+=======
   dragon: boolean;
   mostrarDragon: boolean;
   uno: any = false;
@@ -16,6 +20,7 @@ export class PComediaPage implements OnInit {
   tres: any = false;
   cuatro: any = false;
   cinco: any = false;
+>>>>>>> d25678ec6499ce48a5902ca299af2f2067a942fe
 
   constructor(
     public navController: NavController,
@@ -29,11 +34,19 @@ export class PComediaPage implements OnInit {
     this.navController.back();
   }
 
+<<<<<<< HEAD
+  verTg() {
+    if(!this.ngMTipo) {
+      this.mostrarTg = true;
+    } else {
+      this.mostrarTg = false;
+=======
   verDragon() {
     if(!this.dragon) {
       this.mostrarDragon = true;
     } else {
       this.mostrarDragon = false;
+>>>>>>> d25678ec6499ce48a5902ca299af2f2067a942fe
     }
   }
 
@@ -63,6 +76,8 @@ export class PComediaPage implements OnInit {
     share.present();
   }
 
+<<<<<<< HEAD
+=======
   verEstrellas5() {
     console.log('Ver estrellas 5');
     console.log(this.uno);
@@ -141,5 +156,6 @@ export class PComediaPage implements OnInit {
     }
   }
 
+>>>>>>> d25678ec6499ce48a5902ca299af2f2067a942fe
 }
 

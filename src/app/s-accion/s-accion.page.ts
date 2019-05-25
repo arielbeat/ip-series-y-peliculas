@@ -9,6 +9,10 @@ import { NavController, ActionSheetController } from '@ionic/angular';
 
   export class SAccionPage implements OnInit {
 
+<<<<<<< HEAD
+    ngMTipo: boolean;
+    mostrarTg: boolean;
+=======
     dragon: boolean;
     mostrarDragon: boolean;
     uno: any = false;
@@ -16,6 +20,7 @@ import { NavController, ActionSheetController } from '@ionic/angular';
     tres: any = false;
     cuatro: any = false;
     cinco: any = false;
+>>>>>>> d25678ec6499ce48a5902ca299af2f2067a942fe
   
     constructor(
       public navController: NavController,
@@ -29,11 +34,19 @@ import { NavController, ActionSheetController } from '@ionic/angular';
       this.navController.back();
     }
   
+<<<<<<< HEAD
+    verTg() {
+      if(!this.ngMTipo) {
+        this.mostrarTg = true;
+      } else {
+        this.mostrarTg = false;
+=======
     verDragon() {
       if(!this.dragon) {
         this.mostrarDragon = true;
       } else {
         this.mostrarDragon = false;
+>>>>>>> d25678ec6499ce48a5902ca299af2f2067a942fe
       }
     }
   
@@ -62,6 +75,8 @@ import { NavController, ActionSheetController } from '@ionic/angular';
       });
       share.present();
     }
+<<<<<<< HEAD
+=======
 
     verEstrellas5() {
       console.log('Ver estrellas 5');
@@ -140,5 +155,6 @@ import { NavController, ActionSheetController } from '@ionic/angular';
         this.dos = false;
       }
     }
+>>>>>>> d25678ec6499ce48a5902ca299af2f2067a942fe
   
   }

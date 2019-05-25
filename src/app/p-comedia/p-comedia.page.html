@@ -8,7 +8,11 @@
     <ion-title>Películas: Comedia</ion-title>
     <ion-buttons slot="end">
       <ion-button>
+<<<<<<< HEAD
+        <ion-icon name="flame" size="small"></ion-icon>  
+=======
         <ion-icon name="videocam" size="small"></ion-icon>  
+>>>>>>> d25678ec6499ce48a5902ca299af2f2067a942fe
       </ion-button>
     </ion-buttons>
   </ion-toolbar>
@@ -28,11 +32,19 @@
       <ion-col>
         <ion-item>
           <ion-label>Ver más detalles</ion-label>
+<<<<<<< HEAD
+          <ion-toggle color="success" [(ngModel)]="ngMTipo" (click)="verTg()"></ion-toggle>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row *ngIf="mostrarTg">
+=======
           <ion-toggle color="success" [(ngModel)]="dragon" (click)="verDragon()"></ion-toggle>
         </ion-item>
       </ion-col>
     </ion-row>
     <ion-row *ngIf="mostrarDragon">
+>>>>>>> d25678ec6499ce48a5902ca299af2f2067a942fe
       <ion-col>
         <ion-item>
           <ion-icon name="people" slot="start"></ion-icon>
@@ -51,7 +63,11 @@
         <h3 class="ion-text-center">Sinopsis</h3>
         <p>Cuenta la historia de Phil Wenneck, Stu Price, Alan Garner y Doug Billings, que viajan a Las Vegas para unadespedida de soltero para celebrar el inminente matrimonio de Doug. Sin embargo, Phil, Stu y Alan se despiertan con Doug desaparecido y sin memoria de los eventos de la noche anterior, y deben encontrar al novio antes de que pueda celebrarse la boda.</p>
       </ion-col>
+<<<<<<< HEAD
+      <ion-col>
+=======
       <ion-col size="10" offset="1">
+>>>>>>> d25678ec6499ce48a5902ca299af2f2067a942fe
         <ion-button color="danger" expand="block">
           <ion-icon name="logo-youtube" slot="start"></ion-icon>
           Ver trailer
@@ -59,13 +75,20 @@
       </ion-col>
     </ion-row>
     <ion-row>
+<<<<<<< HEAD
+      <ion-col>
+        <ion-button color="secondary" expand="block" (click)="compartir()">
+=======
       <ion-col size="10" offset="1">
         <ion-button color="success" expand="block" (click)="compartir()">
+>>>>>>> d25678ec6499ce48a5902ca299af2f2067a942fe
           <ion-icon name="share" slot="start"></ion-icon>
           Compartir
         </ion-button>
       </ion-col>
     </ion-row>
+<<<<<<< HEAD
+=======
     <ion-row class="ion-margin">
       <ion-col class="ion-text-center">Clasificación:</ion-col>
     </ion-row>
@@ -103,5 +126,6 @@
         <ion-checkbox color="success" [(ngModel)]="cinco" (ionChange)="verEstrellas5()"></ion-checkbox>
       </ion-col>
     </ion-row>
+>>>>>>> d25678ec6499ce48a5902ca299af2f2067a942fe
   </ion-grid>
 </ion-content>

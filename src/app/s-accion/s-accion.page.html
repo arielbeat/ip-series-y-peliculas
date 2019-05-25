@@ -1,5 +1,9 @@
 <ion-header>
+<<<<<<< HEAD
+  <ion-toolbar color="success">
+=======
   <ion-toolbar color="tertiary">
+>>>>>>> d25678ec6499ce48a5902ca299af2f2067a942fe
     <ion-buttons slot="start">
       <ion-button (click)="volver()">
         <ion-icon name="arrow-back" size="small"></ion-icon>
@@ -8,7 +12,11 @@
     <ion-title>Series: Acción</ion-title>
     <ion-buttons slot="end">
       <ion-button>
+<<<<<<< HEAD
+        <ion-icon name="flame" size="small"></ion-icon>  
+=======
         <ion-icon name="play" size="small"></ion-icon>  
+>>>>>>> d25678ec6499ce48a5902ca299af2f2067a942fe
       </ion-button>
     </ion-buttons>
   </ion-toolbar>
@@ -28,11 +36,19 @@
       <ion-col>
         <ion-item>
           <ion-label>Ver más detalles</ion-label>
+<<<<<<< HEAD
+          <ion-toggle color="success" [(ngModel)]="ngMTipo" (click)="verTg()"></ion-toggle>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row *ngIf="mostrarTg">
+=======
           <ion-toggle color="tertiary" [(ngModel)]="dragon" (click)="verDragon()"></ion-toggle>
         </ion-item>
       </ion-col>
     </ion-row>
     <ion-row *ngIf="mostrarDragon">
+>>>>>>> d25678ec6499ce48a5902ca299af2f2067a942fe
       <ion-col>
         <ion-item>
           <ion-icon name="people" slot="start"></ion-icon>
@@ -51,7 +67,11 @@
         <h3 class="ion-text-center">Sinopsis</h3>
         <p>Krysten Ritter interpreta a Jessica Jones, una ex superhéroe que abre su propia agencia de detectives. Rachael Taylor , Eka Darville y Carrie-Anne Moss también protagonizan, con Mike Colter , Wil Traval , Erin Moriarty y David Tennant que se unen a ellos durante la primera temporada , y JR Ramírez , Terry Chen , Leah Gibson y Janet McTeer se unen para la segunda temporada . Una versión de la serie fue desarrollada originalmente por Rosenberg para ABC.en 2010, pero la red lo pasó. A finales de 2013, Rosenberg estaba reelaborando la serie para Netflix como AKA Jessica Jones . Ritter fue elegido como Jones en diciembre de 2014. Jessica Jones se filmó en la ciudad de Nueva York, en áreas que aún se parecen a la vieja Cocina del Infierno </p>
       </ion-col>
+<<<<<<< HEAD
+      <ion-col>
+=======
       <ion-col size="10" offset="1">
+>>>>>>> d25678ec6499ce48a5902ca299af2f2067a942fe
         <ion-button color="danger" expand="block">
           <ion-icon name="logo-youtube" slot="start"></ion-icon>
           Ver trailer
@@ -59,13 +79,20 @@
       </ion-col>
     </ion-row>
     <ion-row>
+<<<<<<< HEAD
+      <ion-col>
+        <ion-button color="secondary" expand="block" (click)="compartir()">
+=======
       <ion-col size="10" offset="1">
         <ion-button color="tertiary" expand="block" (click)="compartir()">
+>>>>>>> d25678ec6499ce48a5902ca299af2f2067a942fe
           <ion-icon name="share" slot="start"></ion-icon>
           Compartir
         </ion-button>
       </ion-col>
     </ion-row>
+<<<<<<< HEAD
+=======
     <ion-row class="ion-margin">
       <ion-col class="ion-text-center">Clasificación:</ion-col>
     </ion-row>
@@ -103,5 +130,6 @@
         <ion-checkbox color="success" [(ngModel)]="cinco" (ionChange)="verEstrellas5()"></ion-checkbox>
       </ion-col>
     </ion-row>
+>>>>>>> d25678ec6499ce48a5902ca299af2f2067a942fe
   </ion-grid>
 </ion-content>
