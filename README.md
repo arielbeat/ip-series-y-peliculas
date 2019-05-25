@@ -1,5 +1,6 @@
 # ip-series-y-peliculas
-EPE 2 Desarrollo de aplicaciones móviles.
+EPE 2 Desarrollo de aplicaciones móviles
+:smile:
 La aplicación fue desarrollada con el objetivo de entregar informacion y reseñas de peliculas y series.
 Para hacer mas descriptivo cada categoria e item se agregaron imagenes por peliculas y series.
 Dentro de este proyecto se encuentra parte del desarrollo incluye una serie de componetes para darle dinamismo a la App. A continuacion de forma breve se nombran algunos.
