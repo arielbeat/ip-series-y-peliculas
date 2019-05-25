@@ -1,5 +1,7 @@
 {
   "name": "ip-series-y-peliculas",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
